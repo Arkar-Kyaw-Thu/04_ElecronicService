@@ -1,0 +1,365 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+a{
+  color: black;
+}
+.material-icons-outlined {
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 35px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 260px 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas:
+    'sidebar header header header'
+    'sidebar main main main';
+  height: 100vh;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  background-color: #D4F1F4;
+  grid-area: header;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 0 30px;
+  box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* ---------- SIDEBAR ---------- */
+
+#sidebar {
+  grid-area: sidebar;
+  height: 100%;
+  background-color: #05445E;
+  overflow-y: auto;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.sidebar-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px 30px 30px;
+  margin-bottom: 30px;
+}
+
+.sidebar-title > span {
+  display: none;
+}
+
+.sidebar-brand {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sidebar-list {
+  padding: 0;
+  margin-top: 15px;
+  list-style-type: none;
+}
+
+.sidebar-list-item {
+  padding: 20px 20px 20px 20px;
+  font-size: 18px;
+}
+
+.sidebar-list-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.sidebar-list-item > a {
+  text-decoration: none;
+  color: #9e9ea4;
+}
+
+.sidebar-responsive {
+  display: inline !important;
+  position: absolute;
+  /*
+    the z-index of the ApexCharts is 11
+    we want the z-index of the sidebar higher so that
+    the charts are not showing over the sidebar 
+    on small screens
+  */
+  z-index: 12 !important;
+}
+
+/* ---------- MAIN ---------- */
+
+.main-container {
+  grid-area: main;
+  overflow-y: auto;
+  padding: 20px 20px;
+  color: black;
+}
+
+.main-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-title form .item{
+  width: 200px;
+  height:30px;
+}
+
+.main-title form .search{
+  background: transparent;
+  border: transparent;
+  height:35px;
+}
+
+.main-title form .search:hover{
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+.main-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 20px;
+  margin: 20px 0;
+}
+.main-cards a{
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 25px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+
+.card:hover{
+  box-shadow: 4px 5px 5px 3px rgba(0,0,0,0.3);
+}
+
+.card-header{
+  display: flow;
+}
+
+.card-header a{
+  float: right;
+}
+
+.card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+
+.card-button a{
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  width: 100%;
+}
+
+.card-button a:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.card-inner > .material-icons-outlined {
+  font-size: 45px;
+}
+
+.card-table{
+  text-align: center;
+  margin: auto;
+}
+
+.card-table table{
+  justify-content: space-around;
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 5px 5px 5px 5px;
+  width: 100%;
+  box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+}
+.card-table th, td {
+  text-align: left;
+  padding: 8px;
+}
+.card-table tr:nth-child(odd){background-color: gainsboro;}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.charts-card {
+  background-color: #05445E;
+  margin-bottom: 20px;
+  padding: 25px;
+  box-sizing: border-box;
+  -webkit-column-break-inside: avoid;
+  border-radius: 5px;
+  box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+}
+
+.chart-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.history-main-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 20px 5%;
+}
+
+.history-main-card a{
+  text-decoration: none;
+  color: black;
+}
+
+.history-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px 40px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.history-card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.history-card:hover{
+  box-shadow: 5px 6px 6px 4px rgba(0,0,0,0.3);
+}
+
+.detail-main-card{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin: -30px 25%;
+}
+.detail-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px 40px;
+  border: 1px solid grey;
+  border-radius: 20px;
+  box-shadow: 5px 6px 6px 4px rgba(0,0,0,0.3);
+}
+.detail-card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-main-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: -20px 5%;
+}
+.order-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px 40px;
+  border: 1px solid black;
+}
+
+.order-card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* ---------- MEDIA QUERIES ---------- */
+
+/* Medium <= 992px */
+
+@media screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+      'header'
+      'main';
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline;
+  }
+
+  .sidebar-title > span {
+    display: inline;
+  }
+}
+
+/* Small <= 768px */
+
+@media screen and (max-width: 768px) {
+  .main-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  .history-main-card {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+}
+
+/* Extra Small <= 576px */
+
+@media screen and (max-width: 576px) {
+  .hedaer-left {
+    display: none;
+  }
+}

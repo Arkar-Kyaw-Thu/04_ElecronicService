@@ -1,0 +1,700 @@
+
+@font-face {
+    font-family: 'FugazOne-Regular';
+    src:url(../fonts/FugazOne-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src:url(../fonts/OpenSans-Regular.ttf) format('truetype');
+}
+body a{
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+input[type="button"]{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+
+h1,h2,h3,h4,h5,h6{
+	padding:0 0;
+	margin:0 0;
+}
+p{
+	padding:0 0;
+	margin:0 0;
+}
+ul{
+	padding:0 0;
+	margin:0 0;	
+}
+body{
+	padding:0 0;
+	margin:0 0; 
+	font-family: 'OpenSans-Regular'
+}
+.header-top {
+    padding: 2em 0;
+	background-color: #fff;
+}
+.navbar-brand {
+    float: left;
+	margin-left: 2em;
+    padding-left: 2em;
+}
+.navbar-nav {
+    float: right;
+    margin: 0;
+}
+.top-menu ul li {
+    display: inline-block;
+    margin: 0.8em 1em;
+}
+.navbar-brand h1 a {
+    margin-left: 0.7em;
+    padding-left: 0.7em;
+    text-decoration: none;
+    border-radius: 10px;
+	color: #fff;
+	font-size: 1.2em;
+    font-family: 'FugazOne-Regular';
+    text-transform: capitalize;
+}
+.navbar-default .navbar-nav > li > a {
+    border-radius: 10px;
+    font-size: 1.3em;
+    color: #D4F1F4;
+    font-family: 'FugazOne-Regular';
+    margin-right: 3em;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    border-radius: 10px;
+    color: #fff;
+    background-color: royalblue;
+}
+/*.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #a9a685;
+    background-color: #ff9541;
+}*/
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #ff9541;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+}
+.navbar-brand {
+    float: left;
+    height: 0px;
+    padding: 0px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #ff9541;
+}
+.dropdown-menu > li > a {
+    display: block;
+    padding: 10px 20px;
+	font-family: 'FugazOne-Regular';
+	color: #a9a685;
+}
+.dropdown-menu {
+    min-width: 150px;
+    padding: 0px 0;
+    border: 1px solid #fff;
+}
+.navbar-default {
+    border-color: transparent; !important;
+    background-color: #fff;
+}
+.header-banner {
+    background: url(../images/img4.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    min-height: 712px;
+	text-align: center;
+	    padding: 18em 0px 0;
+}
+.banner-grids {
+   background-color: #a9a685;
+    margin-top: 13.8em;
+}
+.banner-grid h4 {
+    font-size: 1.5em;
+    color: #fff;
+	font-family: 'FugazOne-Regular';
+}
+.head-banner {
+    margin: 0 auto;
+    width: 63%;
+}
+.banner-grid p {
+    font-size: 1em;
+    color: #fff;
+	line-height:1.8em;
+	padding: 0.5em 0 0;
+}
+.head-banner h3 {
+    font-size: 3em;
+    color: #fff;
+	font-family: 'FugazOne-Regular';
+}
+.head-banner p{
+     font-size: 1em;
+    color: #fff;
+	line-height:1.8em;
+	padding: 0.5em 0 0;
+}
+.welcome {
+    padding: 4em 0;
+    text-align: center;
+}
+.banner-grid {
+    padding: 3em;
+}
+.welcome h2 {
+    font-size: 3em;
+    text-transform: capitalize;
+    font-family: 'FugazOne-Regular';
+    color: #a9a685;
+}
+
+article {
+    --img-scale: 1.001;
+    --title-color: black;
+    --link-icon-translate: -20px;
+    --link-icon-opacity: 0;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: none;
+    background: #fff;
+    transform-origin: center;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+  }
+  
+  article a::after {
+    position: absolute;
+    inset-block: 0;
+    inset-inline: 0;
+    cursor: pointer;
+    content: "";
+  }
+  
+  /* basic article elements styling */
+  article h2 {
+    margin: 0 0 18px 0;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    transition: color 0.3s ease-out;
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+  
+  article img {
+    max-width: 100%;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .article-body {
+    padding: 24px;
+  }
+  
+  article a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #28666e;
+  }
+  
+  article a:focus {
+    outline: 1px dotted #28666e;
+  }
+  
+  article a .icon {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    transform: translateX(var(--link-icon-translate));
+    opacity: var(--link-icon-opacity);
+    transition: all 0.3s;
+  }
+  
+  /* using the has() relational pseudo selector to update our custom properties */
+  article:has(:hover, :focus) {
+    --img-scale: 1.1;
+    --title-color: #28666e;
+    --link-icon-translate: 0;
+    --link-icon-opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+  
+  
+  /************************ 
+  Generic layout (demo looks)
+  **************************/
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  .card {
+    margin: 0;
+    padding: 48px 0;
+    font-family: "Figtree", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    min-height: 75vh;
+  }
+  
+  .articles {
+    display: grid;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+  }
+  
+  @media screen and (max-width: 960px) {
+    article {
+      container: card/inline-size;
+    }
+    .article-body p {
+      display: none;
+    }
+  }
+  
+  @container card (min-width: 380px) {
+    .article-wrapper {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 16px;
+    }
+    .article-body {
+      padding-left: 0;
+    }
+    figure {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    figure img {
+      height: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+  }
+
+
+
+
+/* /////////add */
+.specials-section {
+  padding: 4em 0;
+  background: #222;
+}
+.specials-section h3 {
+	font-size: 3em;
+    text-transform: capitalize;
+    font-family: 'FugazOne-Regular';
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+.specialsl li {
+  list-style: none;
+}
+.specials1 p {
+  font-size: 1em;
+  line-height: 2em;
+  color: #999;
+}
+.specials1 ul li{
+  list-style-type: none;
+   padding: 0.3em 0;
+}
+.specials1 p a {
+    color: #999;
+}
+.specials1 ul li  a{
+  font-size: 0.965em;
+  text-decoration: none;
+  line-height: 1.8em;
+  color: #999;
+  list-style: none;
+  text-transform: capitalize;
+}
+.specials1 ul li a:hover {
+  color:#ff9541;
+}
+.footer-section{
+	padding:2em 0;
+	text-align:center;
+	background: #05445E;
+}
+.footer-top p {
+	font-size: 0.9em;
+	color: #fff;
+	font-weight: 400;
+}
+.footer-top  a {
+	font-size: 1em;
+	color:#fff;
+	font-weight: 400;
+	text-transform: capitalize;
+}
+.footer-top a:hover {
+	color: #1B1B1B;
+}
+.footer-top a {
+	margin: 0 0.3em
+}
+
+/*--about--*/
+.banner-header {
+  background: url("../images/banner1.jpg")no-repeat 0px 0px;
+  background-size: cover;
+  min-height: 140px;
+  text-align:center;
+   padding: 4em 0 0;
+}
+.banner-header h2 {
+ font-size: 3em;
+    text-transform: capitalize;
+    font-family: 'FugazOne-Regular';
+    color: #fff;
+  
+}
+		/**Responsive**/
+@media(max-width:1440px){
+.header-banner {
+    min-height: 634px;
+    padding: 16em 0 0;
+}
+.banner-grids {
+    margin-top: 10.2em;
+}
+.banner-header {
+    min-height: 130px;
+}
+}
+@media (max-width: 1366px){
+.header-banner {
+    min-height: 600px;
+    padding: 15em 0 0;
+}
+.banner-grids {
+    margin-top: 8.8em;
+}
+}
+@media (max-width: 1280px){
+.header-banner {
+    min-height: 562px;
+    padding: 12em 0 0;
+}
+.banner-grids {
+    margin-top: 9.1em;
+}
+}
+@media (max-width: 1080px){
+.head-banner {
+    margin: 0 auto;
+    width: 77%;
+}
+.header-banner {
+    min-height: 453px;
+    padding: 8em 0 0;
+}
+.banner-grids {
+    margin-top: 5.5em;
+}
+.banner-header {
+    min-height: 105px;
+    padding: 3em 0 0;
+}
+.banner-grid {
+    padding: 2.5em;
+}
+.welcome h2,.banner-header h2 {
+    font-size: 2.5em;
+}
+.head-banner h3,.feature h3,.animals h3 ,.testimonials h3,.events h3,.specials-section h3,.about-grid h3, .ourteam h3,.advantages h3,.contact_left h3, .company_ad h3{
+    font-size: 2.5em;
+}
+.banner-grid h4,.wel-info h4,.feature-grid h4 ,.testimonials h4,.event-grid1 h4,.about-grid h4,.team-grid h4,.right-grid h4,.services-grid h4{
+    font-size: 1.4em;
+}
+.head-banner p,.banner-grid p,.wel-info p,.feature-grid p,.testimonials p ,.event-grid1 p,.specials1 p,.about-grid p,.team-grid p,.right-grid p,.services-grid p,.contact_left p,.company_ad p{
+    font-size: 0.965em;
+}
+.specials1 ul li a {
+    font-size: 0.96em;
+}
+
+}
+@media (max-width: 991px){
+.navbar-brand h1 a {
+   font-size: 1em;
+}
+.nav > li > a {
+   padding: 10px 10px;
+}
+.navbar-nav {
+    margin:4px 0 0;
+}
+.navbar-brand {
+    padding: 0px 30px;
+}	
+.welcome h2,.banner-header h2 {
+    font-size: 2em;
+}
+.head-banner h3,.feature h3,.animals h3 ,.testimonials h3,.events h3,.specials-section h3,.about-grid h3, .ourteam h3,.advantages h3,.contact_left h3, .company_ad h3{
+    font-size: 2em;
+}
+.banner-grid h4,.wel-info h4,.feature-grid h4 ,.testimonials h4,.event-grid1 h4,.about-grid h4,.team-grid h4,.services-grid h4{
+    font-size: 1.25em;
+}
+.head-banner p,.banner-grid p,.wel-info p,.feature-grid p,.testimonials p ,.event-grid1 p,.specials1 p,.about-grid p,.team-grid p,.right-grid p,.services-grid p,.contact_left p,.company_ad p{
+    font-size: 0.95em;
+}
+.specials1 ul li a {
+    font-size: 0.95em;
+}
+.banner-grid {
+    float: left;
+    width: 50%;
+}
+.header-banner {
+    min-height: 350px;
+    padding: 7em 0 0;
+}
+.banner-grid {
+    padding: 1.5em;
+}
+.banner-grids {
+    margin-top: 2.4em;
+}
+.welcome,.feature,.testimonials,.events,.specials-section,.about-section,.services-section,.gallery-section,.typo,.contact {
+    padding: 3em 0;
+}
+.welcome-grid {
+    float: left;
+    width: 25%;
+}
+.specials1 {
+    float: left;
+    width: 50%;
+}
+.specials1:nth-child(3) {
+    margin-top: 1em;
+}
+.specials1:nth-child(4) {
+    margin-top: 1em;
+}
+.wel-info {
+    padding: 1em;
+}
+.wel-info:hover {
+    padding: 1em;
+}
+.welcome-grid {
+    float: left;
+    width: 50%;
+}
+.welcome-grid:nth-child(3) {
+    margin-top: 1em;
+}
+.welcome-grid:nth-child(4) {
+    margin-top: 1em;
+}
+.feature-grid {
+    float: left;
+    width: 33.3%;
+}
+.banner-header {
+    min-height: 78px;
+    padding: 2.2em 0 0;
+
+}
+.grid_4 {
+    background: none;
+    margin-top: 24px;
+}
+.label {
+   font-size: 55%;
+}
+.grid_5 {
+  background: none;
+  padding: 0em 0;
+}
+}
+@media (max-width: 640px){
+.navbar-nav {
+    float: none;
+    margin: 0;
+    text-align: center;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #fff;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #ff9541;
+}
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+	background-color: #ff9541;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-brand {
+    padding: 0px 0px;
+}
+.header-top {
+    padding: 1em 0;
+}
+.head-banner h3, .feature h3, .animals h3, .testimonials h3, .events h3, .specials-section h3, .about-grid h3, .ourteam h3, .advantages h3, .contact_left h3, .company_ad h3 {
+    font-size: 1.8em;
+}
+.header-banner {
+    min-height: 324px;
+    padding: 4em 0 0;
+}
+.head-banner {
+    margin: 0 auto;
+    width: 89%;
+}
+.banner-grids {
+    margin-top: 2.1em;
+}
+.banner-grid h4, .wel-info h4, .feature-grid h4, .testimonials h4, .event-grid1 h4, .about-grid h4, .team-grid h4, .services-grid h4 {
+    font-size: 1.2em;
+}
+.welcome h2, .banner-header h2 {
+    font-size: 1.8em;
+}
+.welcome-grids,.feature-grids,.clients,.events-grids,.team-grids,.advantages-grids {
+    margin-top: 2em;
+}
+}
+@media (max-width: 480px){
+.navbar-brand h1 a {
+    font-size: 0.9em;
+}
+.header-banner {
+    background: url(../images/banner.jpg) no-repeat -180px 0px;
+    background-size: cover;
+}
+.head-banner {
+    margin: 0 auto;
+    width: 100%;
+}
+.head-banner h3, .feature h3, .animals h3, .testimonials h3, .events h3, .specials-section h3, .about-grid h3, .ourteam h3, .advantages h3, .contact_left h3, .company_ad h3 {
+    font-size: 1.7em;
+}
+.banner-grid h4, .wel-info h4, .feature-grid h4, .testimonials h4, .event-grid1 h4, .about-grid h4, .team-grid h4, .services-grid h4 {
+    font-size: 1.15em;
+}
+.head-banner p, .banner-grid p, .wel-info p, .feature-grid p, .testimonials p, .event-grid1 p, .specials1 p, .about-grid p, .team-grid p, .right-grid p, .services-grid p, .contact_left p, .company_ad p {
+    font-size: 0.92em;
+}
+.banner-grid {
+    padding: 1em;
+}
+.welcome, .feature, .animals, .testimonials, .events, .specials-section, .about-section, .services-section, .gallery-section, .typo, .contact {
+    padding: 2em 0;
+}
+.welcome h2, .banner-header h2 {
+    font-size: 1.7em;
+}
+.feature-grid {
+    float: left;
+    width: 100%;
+}
+.left-grid {
+    float: left;
+    width: 20%;
+    margin-right: 2%;
+}
+.right-grid {
+    float: left;
+    width: 77%;
+}
+.banner-header {
+    min-height: 50px;
+    padding: 1.2em 0 0;
+}
+}
+@media (max-width: 320px){
+.header-banner {
+    background: url(../images/banner.jpg) no-repeat -644px 0px;
+    background-size: cover;
+	padding: 2em 0 0;
+}
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+.header-top {
+    padding: 0.5em 0;
+}
+.navbar-brand h1 a {
+    font-size: 0.8em;
+}
+.banner-grid {
+    width: 100%;
+}
+.welcome-grid {
+    padding: 0;
+    width: 100%;
+}
+.welcome-grid:nth-child(2) {
+    margin-top: 1em;
+}
+.feature h3, .animals h3, .testimonials h3, .events h3, .specials-section h3, .about-grid h3, .ourteam h3, .advantages h3, .contact_left h3, .company_ad h3 {
+    font-size: 1.5em;
+}
+.head-banner h3{
+ font-size: 1.7em;
+}
+.welcome, .feature, .animals, .testimonials, .events, .specials-section, .about-section, .services-section, .gallery-section, .typo, .contact {
+    padding: 1em 0;
+}
+.banner-grid h4, .wel-info h4, .feature-grid h4, .testimonials h4, .event-grid1 h4, .about-grid h4, .team-grid h4, .services-grid h4 {
+    font-size: 1.2em;
+}
+.trend ul li a {
+    font-size: 0.92em;
+}
+.feature-grid {
+    padding: 0;
+}
+.welcome-grids, .feature-grids, .clients, .events-grids, .team-grids, .advantages-grids {
+    margin-top: 1em;
+}
+}
